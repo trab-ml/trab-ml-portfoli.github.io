@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    /* --yellow:#f9ca24; */
     --menthe:#01d758;
 }
 
@@ -264,6 +263,11 @@ header .navbar ul li a:hover{
     padding: 1rem 0;
 }
 
+.education .box-container .box p a{
+    text-decoration: none;
+    color:rgb(7, 92, 123);
+}
+
 .education .box-container .box i{
     position: absolute;
     top:-1.5rem; left:-2.5rem;
@@ -357,6 +361,7 @@ header .navbar ul li a:hover{
     color:#eee;
     padding:1rem 0;
     font-weight: normal;
+    text-transform: none;
 }
 
 .contact .row .content .info h3 i{

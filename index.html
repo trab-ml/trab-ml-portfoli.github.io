@@ -16,7 +16,7 @@
 <!-- début header -->
 <header>
     <div class="user">
-        <img src="imgs/DjoBerni.jpg" alt="">
+        <img src="imgs/DjoBerniWithoutBackground.jpg" alt="">
         <h3 class="name">Traore Bernard</h3>
         <p class="post">développeur frontend (en devenir)</p>
     </div>
@@ -63,7 +63,7 @@
 
         <div class="box">
             <span>Java</span>
-            <h3>Sudoku</h3>
+            <h3>Sokoban</h3>
         </div>
 
         <div class="box">
@@ -91,7 +91,7 @@
 <!-- début formation -->
 <section class="education" id="education">
 
-<h1 class="heading"> ma <span>formation</span> </h1>
+<h1 class="heading">ma <span>formation</span> </h1>
 
 <div class="box-container">
 
@@ -99,14 +99,14 @@
         <i class="fas fa-graduation-cap"></i>
         <span>2018</span>
         <h3>Bac s</h3>
-        <p>En 2018, j'ai obtenu mon baccalauréat scientifique avec mention assez-bien à Bamako (Mali).</p>
+        <p>En 2018, j'ai obtenu mon baccalauréat scientifique avec mention assez-bien, au lycée sacré coeur à <a href="https://fr.wikipedia.org/wiki/Bamako">Bamako</a> (Mali).</p>
     </div>
 
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
         <span>2022</span>
         <h3>Licence informatique </h3>
-        <p>Je suis en troisième année de licence informatique à la fac Jean Perrin (Lens)</p>
+        <p>Je suis en troisième année de licence informatique à la <a href="http://www.sciences.univ-artois.fr/">fac Jean Perrin (Lens)</a></p>
     </div>
 
 </div>
@@ -120,27 +120,59 @@
 <h1 class="heading"> mon <span>portfolio</span> </h1>
 
 <div class="box-container">
-    <div class="box" data-role="popup" id="popupCalculator" data-overlay-theme="b" data-theme="b" data-corners="false">
+
+    <div id="popup1">
+        <p>mini projet réalisé à travers le suivi d'un cours d'openclassroom intitulé Débutez avec React</p>
+        <p>Ce projet simulait quelques activités fréquentes sur un site de ventes de plantes : filtrer les plantes, d'en ajouter ou supprimer du panier ...</p>
+        <button id="close-popup1" class="btn">Close</button>
+    </div>
+    <div id="open-popup1" class="box">
         <img src="imgs/calculator.png" alt="">
     </div>
 
-    <div class="box">
+    <div id="popup2">
+        <p>memory</p>
+        <p>memory</p>
+        <button id="close-popup2" class="btn">Close</button>
+    </div>
+    <div id="open-popup2" class="box">
         <img src="imgs/memory.png" alt="">
     </div>
 
-    <div class="box">
+    
+    <div id="popup3">
+        <p>tic tac</p>
+        <p>tic tac</p>
+        <button id="close-popup3" class="btn">Close</button>
+    </div>
+    <div id="open-popup3" class="box">
         <img src="imgs/tictac.png" alt="">
     </div>
 
-    <div class="box">
+    <div id="popup4">
+        <p>sokoban</p>
+        <p>sokoban</p>
+        <button id="close-popup4" class="btn">Close</button>
+    </div>
+    <div id="open-popup4" class="box">
         <img src="imgs/sokoban.png" alt="">
     </div>
 
-    <div class="box">
+    <div id="popup5">
+        <p>puissance4</p>
+        <p>puissance4</p>
+        <button id="close-popup5" class="btn">Close</button>
+    </div>
+    <div id="open-popup5" class="box">
         <img src="imgs/puissance4.png" alt="">
     </div>
 
-    <div class="box">
+    <div id="popup6">
+        <p>jungle</p>
+        <p>jungle</p>
+        <button id="close-popup6" class="btn">Close</button>
+    </div>
+    <div id="open-popup6" class="box">
         <img src="imgs/jungle.png" alt="">
     </div>
 
@@ -162,7 +194,7 @@
         <div class="info">
             <h3> <i class="fas fa-envelope"></i> btraore25@yahoo.com </h3>
             <h3> <i class="fas fa-phone"></i> +33753855479 </h3>
-            <h3> <i class="fas fa-map-marker-alt"></i> Arras, France </h3>
+            <h3> <a href="https://www.arras.fr/"><i class="fas fa-map-marker-alt"></i></a> Arras, France </h3>
         </div>
     </div>
 
@@ -190,5 +222,6 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+  
 </body>
 </html>
