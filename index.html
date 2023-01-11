@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btraore25@yahoo.com</title>
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- début header -->
+<header>
+    <div class="user">
+        <img src="imgs/DjoBerni.jpg" alt="">
+        <h3 class="name">Traore Bernard</h3>
+        <p class="post">développeur frontend (en devenir)</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">accueil</a></li>
+            <li><a href="#about">a propos</a></li>
+            <li><a href="#education">formation</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+<!-- fin header -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- début home -->
+<section class="home" id="home">
+    <h3>Bonjour !</h3>
+    <h1>Je suis <span>Traore Bernard</span></h1>
+    <p>Etudiant en troisième année de licence informatique, je suis à la recherche d'un stage de fin d'année en développement Web.</p>
+    <a href="#about"><button class="btn">a propos de moi <i class="fas fa-user"></i></button></a>
+</section>
+<!-- fin home -->
+
+<!-- début about  -->
+<section class="about" id="about">
+
+<h1 class="heading"> <span>a propos</span> de moi </h1>
+
+<div class="row">
+    <div class="info">
+        <h3> <span> nom : </span> Traore Bernard</h3>
+        <h3> <span> études : </span> faculté Jean Perrin </h3>
+        <h3> <span> poste en vue : </span> développeur frontend </h3>
+        <h3> <span> langue parlée : </span> Français </h3>
+        <a href="moncv.pdf" id="download-link" rel="no-follow"><button class="btn"> télécharger CV <i class="fas fa-download"></i> </button></a>
+    </div>
+
+    <div class="counter">
+
+        <div class="box">
+            <span>Java</span>
+            <h3>Sudoku</h3>
+        </div>
+
+        <div class="box">
+            <span>Js</span>
+            <h3>Memory</h3>
+        </div>
+
+        <div class="box">
+            <span>C + sdl2</span>
+            <h3>Puissance 4</h3>
+        </div>
+
+        <div class="box">
+            <span>Js</span>
+            <h3>Calculator</h3>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+<!-- fin about -->
+
+<!-- début formation -->
+<section class="education" id="education">
+
+<h1 class="heading"> ma <span>formation</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2018</span>
+        <h3>Bac s</h3>
+        <p>En 2018, j'ai obtenu mon baccalauréat scientifique avec mention assez-bien à Bamako (Mali).</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2022</span>
+        <h3>Licence informatique </h3>
+        <p>Je suis en troisième année de licence informatique à la fac Jean Perrin (Lens)</p>
+    </div>
+
+</div>
+
+</section>
+<!-- fin formation -->
+
+<!-- début portfolio  -->
+<section class="portfolio" id="portfolio">
+
+<h1 class="heading"> mon <span>portfolio</span> </h1>
+
+<div class="box-container">
+    <div class="box" data-role="popup" id="popupCalculator" data-overlay-theme="b" data-theme="b" data-corners="false">
+        <img src="imgs/calculator.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="imgs/memory.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="imgs/tictac.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="imgs/sokoban.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="imgs/puissance4.png" alt="">
+    </div>
+
+    <div class="box">
+        <img src="imgs/jungle.png" alt="">
+    </div>
+
+</div>
+
+</section>
+<!-- fin portfolio -->
+
+<!-- début contact -->
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>contactez</span> moi </h1>
+
+<div class="row">
+
+    <div class="content">
+        <h3 class="title">contact</h3>
+
+        <div class="info">
+            <h3> <i class="fas fa-envelope"></i> btraore25@yahoo.com </h3>
+            <h3> <i class="fas fa-phone"></i> +33753855479 </h3>
+            <h3> <i class="fas fa-map-marker-alt"></i> Arras, France </h3>
+        </div>
+    </div>
+
+    <form action="">
+        <input type="text" placeholder="nom" class="box" required>
+        <input type="email" placeholder="email" class="box" required>
+        <input type="text" placeholder="objet" class="box" required>
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message" required></textarea>
+        <button type="submit" class="btn"> Envoyer <i class="fas fa-paper-plane"></i> </button>
+    </form>
+
+</div>
+
+</section>
+<!-- fin contact -->
+
+<!-- scroll top button  -->
+<a href="#home" class="top"> 
+    <!-- TOP  -->
+    <img src="imgs/rocket.svg" alt="" width="80px" height="80px">
+</a> 
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+</body>
+</html>
