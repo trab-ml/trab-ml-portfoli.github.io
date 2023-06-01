@@ -1,227 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>btraore25@yahoo.com</title>
 
     <!-- font awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- début header -->
+    <header class="hidden">
+      <div class="user">
+        <img
+          src="imgs/WithoutBackground.jpg"
+          alt="Une image de ma personne !"
+        />
+        <h3 class="name">développeur web</h3>
+        <p class="post">Traore Bernard</p>
+      </div>
 
-</head>
-<body>
-    
-<!-- début header -->
-<header>
-    <div class="user">
-        <img src="imgs/DjoBerniWithoutBackground.jpg" alt="">
-        <h3 class="name">Traore Bernard</h3>
-        <p class="post">développeur web</p>
-    </div>
-
-    <nav class="navbar">
+      <nav class="navbar">
         <ul>
-            <li><a href="#home">accueil</a></li>
-            <li><a href="#about">a propos</a></li>
-            <li><a href="#education">formation</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#contact">contact</a></li>
+          <li><a href="#home">accueil</a></li>
+          <li><a href="#about">a propos</a></li>
+          <li><a href="#education">formation</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
-    </nav>
+      </nav>
+    </header>
+    <!-- fin header -->
 
-</header>
-<!-- fin header -->
+    <div id="menu" class="fas fa-bars"></div>
 
-<div id="menu" class="fas fa-bars"></div>
+    <!-- début home -->
+    <section class="home hidden" id="home">
+      <h2>Bonjour !</h2>
+      <div class="container">
+        <div class="card">
+          <div class="imgBx"><img src="./imgs/bgtof2.png" /></div>
+          <div class="content" style="--color: green">
+            <h2>Qui suis je ?</h2>
+            <p>Je suis Traore Bernard.</p>
+            <a href="#about">En savoir plus</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx"><img src="./imgs/bgtof3.png" /></div>
+          <div class="content" style="--color: blue">
+            <h2>Qui suis je ?</h2>
+            <p>
+              je viens d'obtenir ma licence en informatique et je compte
+              poursuivre en alternance dans le développement web.
+            </p>
+            <a href="#about">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin home -->
 
-<!-- début home -->
-<section class="home" id="home">
-    <h3>Bonjour !</h3>
-    <h1>Je suis <span>Traore Bernard</span></h1>
-    <p>Etudiant en troisième année de licence informatique, je suis à la recherche d'un stage de fin d'année en développement Web.</p>
-    <a href="#about"><button class="btn">a propos de moi <i class="fas fa-user"></i></button></a>
-</section>
-<!-- fin home -->
+    <!-- début about  -->
+    <section class="about" id="about">
+      <h1 class="heading hidden"><span>a propos</span> de moi</h1>
 
-<!-- début about  -->
-<section class="about" id="about">
+      <div class="row">
+        <div class="info hidden">
+          <h3><span> nom : </span> Traore Bernard</h3>
+          <h3><span> études : </span> université d'Artois</h3>
+          <h3><span> poste en vue : </span> développeur web</h3>
+          <h3><span> langue parlée : </span> Français</h3>
+          <a href="cv.pdf" id="download-link" rel="no-follow"
+            ><button class="btn">
+              télécharger CV <i class="fas fa-download"></i></button
+          ></a>
+        </div>
 
-<h1 class="heading"> <span>a propos</span> de moi </h1>
+        <div class="stack-tech hidden">
+          <h4>Tech récemment utilisées</h4>
+          <div class="counter">
+            <div class="box">
+              <h3>Web Interface</h3>
+              <span>React + TypeScript + Material UI</span>
+            </div>
+            <div class="box">
+              <h3>Movie App</h3>
+              <span>JavaScript + PHP + SQlite + CSS</span>
+            </div>
+            <div class="box">
+              <h3>Connect 4</h3>
+              <span>C + sdl2</span>
+            </div>
+            <div class="box">
+              <h3>Restaurant Website</h3>
+              <span>JavaScript / PHP / Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin about -->
 
-<div class="row">
-    <div class="info">
-        <h3> <span> nom : </span> Traore Bernard</h3>
-        <h3> <span> études : </span> faculté Jean Perrin </h3>
-        <h3> <span> poste en vue : </span> développeur web</h3>
-        <h3> <span> langue parlée : </span> Français </h3>
-        <a href="MON_CV.pdf" id="download-link" rel="no-follow"><button class="btn"> télécharger CV <i class="fas fa-download"></i> </button></a>
-    </div>
+    <!-- début formation -->
+    <section class="education hidden" id="education">
+      <h1 class="heading">ma <span>formation</span></h1>
 
-    <div class="counter">
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2018</span>
+          <h3>Bac s</h3>
+          <p>
+            En 2018, j'ai obtenu mon baccalauréat scientifique avec mention
+            assez-bien, au lycée sacré coeur à
+            <a href="https://fr.wikipedia.org/wiki/Bamako">Bamako</a> (Mali).
+          </p>
+        </div>
 
         <div class="box">
-            <span>Java</span>
-            <h3>Sokoban</h3>
+          <i class="fas fa-graduation-cap"></i>
+          <span>2023</span>
+          <h3>Licence informatique</h3>
+          <p>
+            Je viens de finir ma troisième année de licence informatique à l'
+            <a href="http://www.sciences.univ-artois.fr/"
+              >Université d'Artois (Lens)</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- fin formation -->
+
+    <!-- début portfolio  -->
+    <section class="portfolio hidden" id="portfolio">
+      <h1 class="heading">mon <span>portfolio</span></h1>
+
+      <div class="box-container">
+        <div class="flip-card box hidden" style="--transition-delay: 2;" >
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/calculator.png" alt="memory" />
+            </div>
+            <div class="flip-card-back">
+              <h1>Calculator</h1>
+              <p>
+                Exercice pratique javascript reproduisant une calculatrice
+                moderne capable de calculer comme cette dernière.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="box">
-            <span>Js</span>
-            <h3>Memory</h3>
+        <div class="flip-card box hidden" style="--transition-delay: 4;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/memory.png" alt="memory" />
+            </div>
+            <div class="flip-card-back">
+              <h1>Memory</h1>
+              <p>
+                Exercice pratique pour mieux cerner l'application de la logique
+                javascript à travers la reproduction du jeu memory.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="box">
-            <span>C + sdl2</span>
-            <h3>Puissance 4</h3>
+        <div class="flip-card box hidden" style="--transition-delay: 6;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/tictac.png" alt="memory" />
+            </div>
+            <div class="flip-card-back">
+              <h1>Tic Tac Toe</h1>
+              <p>
+                Exercice pratique pour mieux cerner l'application de la logique
+                javascript à travers la reproduction du jeu tic tac toe.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="box">
-            <span>Js</span>
-            <h3>Calculator</h3>
+        <div class="flip-card box hidden" style="--transition-delay: 8;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/sokoban.png" alt="memory" />
+            </div>
+            <div class="flip-card-back">
+              <h1>Sokoban</h1>
+              <p>
+                Exercice pratique pour mieux cerner l'application de la logique
+                java à travers la reproduction du jeu sokoban.
+              </p>
+            </div>
+          </div>
         </div>
 
-    </div>
-
-</div>
-
-</section>
-<!-- fin about -->
-
-<!-- début formation -->
-<section class="education" id="education">
-
-<h1 class="heading">ma <span>formation</span> </h1>
-
-<div class="box-container">
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2018</span>
-        <h3>Bac s</h3>
-        <p>En 2018, j'ai obtenu mon baccalauréat scientifique avec mention assez-bien, au lycée sacré coeur à <a href="https://fr.wikipedia.org/wiki/Bamako">Bamako</a> (Mali).</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2022</span>
-        <h3>Licence informatique </h3>
-        <p>Je suis en troisième année de licence informatique à l' <a href="http://www.sciences.univ-artois.fr/">Université d'Artois (Lens)</a></p>
-    </div>
-
-</div>
-
-</section>
-<!-- fin formation -->
-
-<!-- début portfolio  -->
-<section class="portfolio" id="portfolio">
-
-<h1 class="heading"> mon <span>portfolio</span> </h1>
-
-<div class="box-container">
-
-    <div id="popup1">
-        <p>mini projet réalisé à travers le suivi d'un cours d'openclassroom intitulé Débutez avec React</p>
-        <p>Ce projet simulait quelques activités fréquentes sur un site de ventes de plantes : filtrer les plantes, d'en ajouter ou supprimer du panier ...</p>
-        <button id="close-popup1" class="btn">Close</button>
-    </div>
-    <div id="open-popup1" class="box">
-        <img src="imgs/calculator.png" alt="">
-    </div>
-
-    <div id="popup2">
-        <p>memory</p>
-        <p>memory</p>
-        <button id="close-popup2" class="btn">Close</button>
-    </div>
-    <div id="open-popup2" class="box">
-        <img src="imgs/memory.png" alt="">
-    </div>
-
-    
-    <div id="popup3">
-        <p>tic tac</p>
-        <p>tic tac</p>
-        <button id="close-popup3" class="btn">Close</button>
-    </div>
-    <div id="open-popup3" class="box">
-        <img src="imgs/tictac.png" alt="">
-    </div>
-
-    <div id="popup4">
-        <p>sokoban</p>
-        <p>sokoban</p>
-        <button id="close-popup4" class="btn">Close</button>
-    </div>
-    <div id="open-popup4" class="box">
-        <img src="imgs/sokoban.png" alt="">
-    </div>
-
-    <div id="popup5">
-        <p>puissance4</p>
-        <p>puissance4</p>
-        <button id="close-popup5" class="btn">Close</button>
-    </div>
-    <div id="open-popup5" class="box">
-        <img src="imgs/puissance4.png" alt="">
-    </div>
-
-    <div id="popup6">
-        <p>jungle</p>
-        <p>jungle</p>
-        <button id="close-popup6" class="btn">Close</button>
-    </div>
-    <div id="open-popup6" class="box">
-        <img src="imgs/jungle.png" alt="">
-    </div>
-
-</div>
-
-</section>
-<!-- fin portfolio -->
-
-<!-- début contact -->
-<section class="contact" id="contact">
-
-<h1 class="heading"> <span>contactez</span> moi </h1>
-
-<div class="row">
-
-    <div class="content">
-        <h3 class="title">contact</h3>
-
-        <div class="info">
-            <h3> <i class="fas fa-envelope"></i> btraore25@yahoo.com </h3>
-            <h3> <i class="fas fa-phone"></i> +33753855479 </h3>
-            <h3> <a href="https://www.arras.fr/"><i class="fas fa-map-marker-alt"></i></a> Arras, France </h3>
+        <div class="flip-card box hidden" style="--transition-delay: 10;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/puissance4.png" alt="puissance 4 app picture" />
+            </div>
+            <div class="flip-card-back">
+              <h1>Puissance 4</h1>
+              <p>
+                Exercice pratique pour mieux cerner l'application de la logique
+                C à travers la reproduction du jeu Puissance 4.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
+ 
+        <div class="flip-card box hidden" style="--transition-delay: 12;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/jungle.png" alt="perfum website picture" />
+            </div>
+            <div class="flip-card-back">
+              <h1>Perfume Store</h1>
+              <p>
+                Ce projet simulait quelques activités fréquentes sur un site de
+                ventes de plantes : filtrer les plantes, d'en ajouter ou
+                supprimer du panier ...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin portfolio -->
 
-    <form action="">
-        <input type="text" placeholder="nom" class="box" required>
-        <input type="email" placeholder="email" class="box" required>
-        <input type="text" placeholder="objet" class="box" required>
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message" required></textarea>
-        <button type="submit" class="btn"> Envoyer <i class="fas fa-paper-plane"></i> </button>
-    </form>
+    <!-- début contact -->
+    <section class="contact hidden" id="contact">
+      <h1 class="heading"><span>contactez</span> moi</h1>
 
-</div>
+      <div class="row">
+        <div class="content">
+          <h3 class="title">contact</h3>
 
-</section>
-<!-- fin contact -->
+          <div class="info">
+            <h3><i class="fas fa-envelope"></i> btraore25@yahoo.com</h3>
+            <h3><i class="fas fa-phone"></i> +33753855479</h3>
+            <h3>
+              <a href="https://www.arras.fr/"
+                ><i class="fas fa-map-marker-alt"></i
+              ></a>
+              Arras, France
+            </h3>
+          </div>
+        </div>
 
-<!-- scroll top button  -->
-<a href="#home" class="top"> 
-    <!-- TOP  -->
-    <img src="imgs/rocket.svg" alt="" width="80px" height="80px">
-</a> 
+        <form action="">
+          <input type="text" placeholder="nom" class="box" required />
+          <input type="email" placeholder="email" class="box" required />
+          <input type="text" placeholder="objet" class="box" required />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            class="box message"
+            placeholder="message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">
+            Envoyer <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- fin contact -->
 
-<!-- jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- scroll to top trigger  -->
+    <a href="#home" class="top">
+      <!-- TOP  -->
+      <img src="imgs/rocket.svg" alt="" width="80px" height="80px" />
+    </a>
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-  
-</body>
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- js files -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
