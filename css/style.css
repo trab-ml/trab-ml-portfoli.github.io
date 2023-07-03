@@ -59,7 +59,7 @@ header .user .post {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: all 1s;
+  transition: all 1s; /*700ms*/
 }
 
 .show {
@@ -220,13 +220,23 @@ header {
   text-align: center;
 }
 
+header .user div {
+  height: 23rem;
+  width: 23rem;
+}
+
 header .user img {
-  height: 17rem;
-  width: 17rem;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
   border: 0.7rem solid var(--menthe);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+header .user img:hover {
+  cursor: pointer;
 }
 
 header .user .name {
