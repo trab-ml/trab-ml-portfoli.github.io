@@ -1,0 +1,66 @@
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+
+    .info {
+        padding: 2rem 1rem 2rem 6rem;
+
+        h4 {
+            span {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .stack-tech {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5rem 0;
+
+        h4 {
+            text-transform: capitalize;
+        }
+
+        .ctn {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-top: 2rem;
+            padding: 0 1rem;
+
+            .box {
+                width: 20rem;
+                height: 10rem;
+                text-align: center;
+
+                background: #222;
+
+                span {
+                    font-size: 1.1rem;
+
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 817px) {
+    .about .row {
+        .info {
+            padding: 0 2rem;
+        }
+        .stack-tech {
+            .ctn {
+                flex-direction: column;
+                .box {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

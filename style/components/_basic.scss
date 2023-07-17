@@ -1,0 +1,70 @@
+// les réutilisables
+.hidden {
+    transform: translateX(-100%);
+
+    opacity: 0;
+    filter: blur(5px);
+
+    transition: all 700ms;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+
+    color: black;
+    background: beige;
+
+    cursor: pointer;
+
+    font-size: 0.9rem;
+
+    border-radius: 5rem;
+
+    i {
+        padding: 0 0.5rem;
+
+        font-size: 1.2rem;
+    }
+}
+
+.btn:hover {
+    color: beige;
+    background: #00bcd4;
+}
+
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    padding: 1rem 1.5rem;
+    display: none;
+    z-index: 1000;
+
+    color: #fff;
+    background: #333;
+
+    cursor: pointer;
+
+    font-size: 2.5rem;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+// rocket style
+.top {
+    position: fixed;
+    display: none;
+    bottom: 4.5rem;
+    right: -1rem;
+    z-index: 100;
+}

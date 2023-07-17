@@ -1,0 +1,89 @@
+.contact {
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2rem 6rem;
+
+        .item {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+        }
+
+        .item1 {
+            gap: 5rem;
+
+            font-size: 1.7rem;
+
+            h4 {
+                text-align: center;
+            }
+        }
+
+        .item2 {
+            gap: 1.5rem;
+
+            input {
+                padding: 1.5rem;
+
+                background: #3333;
+            }
+
+            .message {
+                height: 15rem;
+                padding: 1.5rem;
+                resize: none;
+
+                background: #3333;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 917px) {
+    .contact {
+        .row {
+            flex-direction: column;
+            margin: 2rem 1rem;
+
+            .item {
+                width: 100%;
+            }
+
+            .item1 {
+                p {
+                    display: flex;
+                    align-items: center;
+
+                    font-size: 0.8rem;
+                    
+                    span {
+                        display: flex;
+                        margin-left: auto;
+                    }
+                }
+            }
+            .item2 {
+                gap: 0.5rem;
+    
+
+                input,
+                .message {
+                    width: 100%;
+                    padding: 1rem;
+                }
+
+                input {
+                    padding: 1rem;
+                }
+    
+                .message {
+                    height: 10rem;
+                }
+            }
+        }
+    }
+}

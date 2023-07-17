@@ -1,295 +1,294 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>btraore25@yahoo.com</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>btraore25@yahoo.com</title>
 
-    <!-- font awesome  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
-  <body>
-    <!-- début header -->
-    <header class="hidden">
-      <div class="user">
-        <div>
-          <img
-            src="imgs/WithoutBackground.jpg"
-            alt="Une image de ma personne !"
-          />
-        </div>
-        <h3 class="name">développeur web</h3>
-        <p class="post">Traore Bernard</p>
-      </div>
+        <!-- font awesome  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="style/main.css" />
+    </head>
 
-      <nav class="navbar">
-        <ul>
-          <li><a href="#home">accueil</a></li>
-          <li><a href="#about">a propos</a></li>
-          <li><a href="#education">formation</a></li>
-          <li><a href="#portfolio">portfolio</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- fin header -->
-
-    <div id="menu" class="fas fa-bars"></div>
-
-    <!-- début home -->
-    <section class="home hidden" id="home">
-      <h2>Bonjour !</h2>
-      <div class="container">
-        <div class="card">
-          <div class="imgBx"><img src="./imgs/bgtof2.png" /></div>
-          <div class="content" style="--color: green">
-            <h2>Qui suis je ?</h2>
-            <p>Je suis Traore Bernard.</p>
-            <a href="#about">En savoir plus</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx"><img src="./imgs/bgtof3.png" /></div>
-          <div class="content" style="--color: blue">
-            <h2>Qui suis je ?</h2>
-            <p>
-              je viens d'obtenir ma licence en informatique et je compte
-              poursuivre en alternance dans le développement web.
-            </p>
-            <a href="#about">En savoir plus</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- fin home -->
-
-    <!-- début about  -->
-    <section class="about" id="about">
-      <h1 class="heading hidden"><span>a propos</span> de moi</h1>
-
-      <div class="row">
-        <div class="info hidden">
-          <h3><span> nom : </span> Traore Bernard</h3>
-          <h3><span> études : </span> université d'Artois</h3>
-          <h3><span> poste en vue : </span> développeur web</h3>
-          <h3><span> langue parlée : </span> Français</h3>
-          <a href="cv.pdf" id="download-link" rel="no-follow"
-            ><button class="btn">
-              télécharger CV <i class="fas fa-download"></i></button
-          ></a>
-        </div>
-
-        <div class="stack-tech hidden">
-          <h4>Tech récemment utilisées</h4>
-          <div class="counter">
-            <div class="box">
-              <h3>DreamHome</h3>
-              <span>React + React Hook Form + Axios</span>
+    <body>
+        <!-- début header -->
+        <header id="sidebar" class="hidden">
+            <div class="user">
+                <div>
+                    <img
+                        src="imgs/WithoutBackground.jpg"
+                        alt="Une image de ma personne !"
+                    />
+                </div>
+                <h1>Développeur web</h1>
+                <p>Traoré Bernard</p>
             </div>
-            <div class="box">
-              <h3>Web Interface</h3>
-              <span>React + TypeScript + Material UI</span>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home" class="nav-link">accueil</a></li>
+                    <li><a href="#about" class="nav-link">a propos</a></li>
+                    <li><a href="#education" class="nav-link">formation</a></li>
+                    <li><a href="#portfolio" class="nav-link">portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- fin header -->
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <!-- début home -->
+        <section class="home hidden" id="home">
+            <p>Bonjour !</p>
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx"><img src="./imgs/bgtof2.png" /></div>
+                    <div class="content" style="--color: green">
+                        <p>Qui suis je ?</p>
+                        <p>Je suis Traore Bernard.</p>
+                        <a href="#about">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx"><img src="./imgs/bgtof3.png" /></div>
+                    <div class="content" style="--color: blue">
+                        <p>Qui suis je ?</p>
+                        <p>
+                            Détenteur d'une licence en informatique, je compte
+                            me spécialiser dans le développement web en
+                            alternance.
+                        </p>
+                        <a href="#about">En savoir plus</a>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-              <h3>Movie App</h3>
-              <span>JavaScript + PHP + SQlite + CSS</span>
+        </section>
+        <!-- fin home -->
+
+        <!-- début about  -->
+        <section class="about" id="about">
+            <h2 class="heading hidden">a propos de moi</h2>
+
+            <div class="row">
+                <div class="info hidden">
+                    <h4><span> nom : </span> Traore Bernard</h4>
+                    <h4><span> études : </span> université d'Artois</h4>
+                    <h4><span> poste en vue : </span> Développeur web</h4>
+                    <h4><span> langue parlée : </span> Français</h4>
+                    <a href="cv.pdf" id="download-link" rel="no-follow"
+                        ><button class="btn download-btn">
+                            Télécharger CV
+                            <i class="fas fa-download"></i></button
+                    ></a>
+                </div>
+
+                <div class="stack-tech hidden">
+                    <h3>Stack récemment utilisée</h3>
+                    <div class="ctn">
+                        <div class="box">
+                            <h4>DreamHome</h4>
+                            <span>React + React Hook Form + Axios</span>
+                        </div>
+                        <div class="box">
+                            <h4>Web Interface</h4>
+                            <span>React + TypeScript + Material UI</span>
+                        </div>
+                        <div class="box">
+                            <h4>Movie App</h4>
+                            <span>JavaScript + PHP + SQlite + CSS</span>
+                        </div>
+                        <div class="box">
+                            <h4>Connect 4</h4>
+                            <span>C + sdl2</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-              <h3>Connect 4</h3>
-              <span>C + sdl2</span>
+        </section>
+        <!-- fin about -->
+
+        <!-- début formation -->
+        <section class="education hidden" id="education">
+            <h2 class="heading">ma formation</h2>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2018</span>
+                    <h4>Bac S</h4>
+                    <p>
+                        En 2018, j'ai obtenu mon baccalauréat scientifique avec
+                        mention assez-bien, au lycée sacré coeur à
+                        <a href="https://fr.wikipedia.org/wiki/Bamako"
+                            >Bamako</a
+                        >
+                        (Mali).
+                    </p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2023</span>
+                    <h4>Licence informatique</h4>
+                    <p>
+                        Je viens d'achever ma troisième année de licence
+                        informatique à l'
+                        <a href="http://www.sciences.univ-artois.fr/"
+                            >Université d'Artois (Lens).</a
+                        >
+                    </p>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- fin about -->
+        </section>
+        <!-- fin formation -->
 
-    <!-- début formation -->
-    <section class="education hidden" id="education">
-      <h1 class="heading">ma <span>formation</span></h1>
+        <!-- début projects section  -->
+        <section class="portfolio hidden" id="portfolio">
+            <h2 class="heading">mes projets</h2>
 
-      <div class="box-container">
-        <div class="box">
-          <i class="fas fa-graduation-cap"></i>
-          <span>2018</span>
-          <h3>Bac s</h3>
-          <p>
-            En 2018, j'ai obtenu mon baccalauréat scientifique avec mention
-            assez-bien, au lycée sacré coeur à
-            <a href="https://fr.wikipedia.org/wiki/Bamako">Bamako</a> (Mali).
-          </p>
-        </div>
+            <div class="box-container">
+                <div class="flip-card box hidden" style="--transition-delay: 2">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="imgs/calculator.png" alt="memory" />
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Calculator</h4>
+                            <p>
+                                Mini-projet javascript reproduisant une
+                                calculatrice moderne permettant de calculer
+                                comme cette dernière.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="box">
-          <i class="fas fa-graduation-cap"></i>
-          <span>2023</span>
-          <h3>Licence informatique</h3>
-          <p>
-            Je viens de finir ma troisième année de licence informatique à l'
-            <a href="http://www.sciences.univ-artois.fr/"
-              >Université d'Artois (Lens)</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- fin formation -->
+                <div class="flip-card box hidden" style="--transition-delay: 4">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="imgs/memory.png" alt="memory" />
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Memory</h4>
+                            <p>
+                                Mini-projet visant à mieux cerner la logique
+                                javascript à travers la reproduction du jeu
+                                memory.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- début portfolio  -->
-    <section class="portfolio hidden" id="portfolio">
-      <h1 class="heading">mon <span>portfolio</span></h1>
+                <div class="flip-card box hidden" style="--transition-delay: 6">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="imgs/tictac.png" alt="memory" />
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Tic Tac Toe</h4>
+                            <p>
+                                Mini-projet ayant comme objectif de mieux cerner
+                                la logique javascript à travers la reproduction
+                                du jeu tic tac toe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="box-container">
-        <div class="flip-card box hidden" style="--transition-delay: 2">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imgs/calculator.png" alt="memory" />
+                <div class="flip-card box hidden" style="--transition-delay: 8">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="imgs/sokoban.png" alt="memory" />
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Sokoban</h4>
+                            <p>
+                                Mini-projet visant à intégrer la logique java à
+                                travers la reproduction du jeu sokoban.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card box hidden" style="--transition-delay: 10">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                                src="imgs/puissance4.png"
+                                alt="puissance 4 app picture"
+                            />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Puissance 4</h1>
+                            <p>
+                                Mini-projet ayant pour but de mieux cerner la
+                                logique C à travers la reproduction du jeu
+                                Puissance 4.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card box hidden" style="--transition-delay: 12">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                                src="imgs/jungle.png"
+                                alt="perfum website picture"
+                            />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Green Sight</h1>
+                            <p>
+                                Projet ludique résumant le cours OpenClassroom
+                                "Débutez avec React", ce projet représente le
+                                front d'un site de ventes de plantes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="flip-card-back">
-              <h1>Calculator</h1>
-              <p>
-                Exercice javascript reproduisant une calculatrice moderne
-                capable permettant de calculer comme celle-ci.
-              </p>
+        </section>
+        <!-- fin projects section -->
+
+        <!-- début contact -->
+        <section class="contact hidden" id="contact">
+            <h2 class="heading">contactez moi</h2>
+
+            <div class="row">
+                <div class="item item1">
+                    <h4 class="title">Contact</h4>
+                    <p> <i class="fas fa-envelope"></i> <span> btraore25@yahoo.com </span> </p>
+                    <p> <i class="fas fa-phone"></i> <span> +33 753855479 </span> </p>
+                    <p>
+                      <a href="https://www.arras.fr/"><i class="fas fa-map-marker-alt" style="color: #000"></i></a>
+                      <span> Arras, France </span>
+                    </p>
+                </div>
+
+                <form class="item item2" action="">
+                    <input type="text" placeholder="nom" class="box" required />
+                    <input type="email" placeholder="email" class="box" required/>
+                    <input type="text" placeholder="objet" class="box" required />
+                    <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message" required ></textarea>
+                    <button type="submit" class="btn"> Envoyer <i class="fas fa-paper-plane"></i> </button>
+                </form>
             </div>
-          </div>
-        </div>
+        </section>
+        <!-- fin contact -->
 
-        <div class="flip-card box hidden" style="--transition-delay: 4">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imgs/memory.png" alt="memory" />
-            </div>
-            <div class="flip-card-back">
-              <h1>Memory</h1>
-              <p>
-                Exercice visant à mieux cerner la logique javascript à travers
-                la reproduction du jeu memory.
-              </p>
-            </div>
-          </div>
-        </div>
+        <!-- scroll to top trigger  -->
+        <a href="#home" class="top"> <img src="imgs/rocket.svg" alt="" width="80px" height="80px" /> </a>
 
-        <div class="flip-card box hidden" style="--transition-delay: 6">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imgs/tictac.png" alt="memory" />
-            </div>
-            <div class="flip-card-back">
-              <h1>Tic Tac Toe</h1>
-              <p>
-                Exercice ayant comme objectif de mieux cerner la logique
-                javascript à travers la reproduction du jeu tic tac toe.
-              </p>
-            </div>
-          </div>
-        </div>
+        <!-- jquery cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-        <div class="flip-card box hidden" style="--transition-delay: 8">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imgs/sokoban.png" alt="memory" />
-            </div>
-            <div class="flip-card-back">
-              <h1>Sokoban</h1>
-              <p>
-                Exercice visant la logique java à travers la reproduction du jeu
-                sokoban.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip-card box hidden" style="--transition-delay: 10">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imgs/puissance4.png" alt="puissance 4 app picture" />
-            </div>
-            <div class="flip-card-back">
-              <h1>Puissance 4</h1>
-              <p>
-                Exercice pratique pour mieux cerner la logique C à travers la
-                reproduction du jeu Puissance 4.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flip-card box hidden" style="--transition-delay: 12">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imgs/jungle.png" alt="perfum website picture" />
-            </div>
-            <div class="flip-card-back">
-              <h1>Green Sight</h1>
-              <p>
-                Projet ludique résumant le cours OpenClassroom "Débutez avec
-                React", ce projet représente le front d'un site de ventes de
-                plantes
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- fin portfolio -->
-
-    <!-- début contact -->
-    <section class="contact hidden" id="contact">
-      <h1 class="heading"><span>contactez</span> moi</h1>
-
-      <div class="row">
-        <div class="content">
-          <h3 class="title">contact</h3>
-
-          <div class="info">
-            <h3><i class="fas fa-envelope"></i> btraore25@yahoo.com</h3>
-            <h3><i class="fas fa-phone"></i> +33753855479</h3>
-            <h3>
-              <a href="https://www.arras.fr/"
-                ><i class="fas fa-map-marker-alt"></i
-              ></a>
-              Arras, France
-            </h3>
-          </div>
-        </div>
-
-        <form action="">
-          <input type="text" placeholder="nom" class="box" required />
-          <input type="email" placeholder="email" class="box" required />
-          <input type="text" placeholder="objet" class="box" required />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            class="box message"
-            placeholder="message"
-            required
-          ></textarea>
-          <button type="submit" class="btn">
-            Envoyer <i class="fas fa-paper-plane"></i>
-          </button>
-        </form>
-      </div>
-    </section>
-    <!-- fin contact -->
-
-    <!-- scroll to top trigger  -->
-    <a href="#home" class="top">
-      <!-- TOP  -->
-      <img src="imgs/rocket.svg" alt="" width="80px" height="80px" />
-    </a>
-
-    <!-- jquery cdn link  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- js files -->
-    <script src="js/script.js"></script>
-  </body>
+        <!-- js files -->
+        <script src="js/script.js"></script>
+    </body>
 </html>
