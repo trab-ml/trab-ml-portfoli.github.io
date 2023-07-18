@@ -15,22 +15,33 @@ $(document).ready(function () {
         }
     });
 
+    // detect resize
+    function handleResize() {}
+    $(window).resize(function () {
+        if ($(window).width() > 500) {
+            $("section").removeClass("on-mobile");
+            $("#sidebar").addClass("show");
+            $("section").addClass("hidden");
+            $("#home").addClass("show");
+        }
+    });
+
     // handle click
     $(".nav-link").click(function (e) {
-        if ($(window).width() < 500) {
-            // $("#sidebar").removeClass("show");
-            $("#sidebar").css({'display': 'none'});
-        }
         $(".nav-link").css({
-          'color': '#000',
-          'background': '#fff'
+            color: "#000",
+            background: "#fff",
         });
-        $(this).addClass("active");
         $(this).css({
-          'color': 'beige',
-          'background': '#00bcd4'
+            color: "beige",
+            background: "#00bcd4",
         });
-        console.log($(this));
+
+        if ($(window).width() < 500) {
+            $("#sidebar").removeClass("show");
+            $("section").removeClass("show").removeClass("hidden");
+            $("section").addClass("on-mobile");
+        }
     });
 
     // smooth scrolling

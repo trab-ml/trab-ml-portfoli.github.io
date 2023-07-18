@@ -247,7 +247,6 @@ header .user p {
 @media screen and (max-width: 500px) {
   header {
     width: 100%;
-    padding: 0.3rem;
   }
 }
 .home {
@@ -740,4 +739,9 @@ header .user .post {
     font-weight: 300;
     line-height: 1.1rem;
   }
+}
+.on-mobile {
+  position: relative;
+  width: 18rem;
+  left: -15rem;
 }/*# sourceMappingURL=main.css.map */
