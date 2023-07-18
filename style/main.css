@@ -403,16 +403,17 @@ header .user p {
 }
 .about .row .stack-tech {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: 5rem 0;
+  text-align: center;
 }
 .about .row .stack-tech h4 {
   text-transform: capitalize;
 }
 .about .row .stack-tech .ctn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-flow: row wrap;
   gap: 2rem;
   margin-top: 2rem;
   padding: 0 1rem;
