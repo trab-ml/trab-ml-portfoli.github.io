@@ -74,6 +74,16 @@ table {
   background: #e5e5e6;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  color: rgb(0, 255, 255);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .heading {
   text-align: center;
   text-transform: capitalize;
@@ -620,7 +630,7 @@ header .user p {
   font-size: 1.7rem;
 }
 .contact .row .item1 h4 {
-  text-align: center;
+  text-align: left;
 }
 .contact .row .item2 {
   gap: 1.5rem;
@@ -634,6 +644,10 @@ header .user p {
   padding: 1.5rem;
   resize: none;
   background: rgba(51, 51, 51, 0.2);
+}
+.contact .row .item2 .btn {
+  width: 15rem;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 917px) {
@@ -666,6 +680,9 @@ header .user p {
   }
   .contact .row .item2 .message {
     height: 10rem;
+  }
+  .contact .row .item2 .btn {
+    width: 10rem;
   }
 }
 html {

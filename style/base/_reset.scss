@@ -67,3 +67,13 @@ table {
     color: #333;
     background: $primary;
 }
+
+a {
+	text-decoration: none;
+	color: inherit;
+	color: rgb(0, 255, 255);
+}
+
+a:hover {
+	text-decoration: underline;
+}

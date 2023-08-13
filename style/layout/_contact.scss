@@ -19,7 +19,7 @@
             font-size: 1.7rem;
 
             h4 {
-                text-align: center;
+                text-align: left;
             }
         }
 
@@ -38,6 +38,11 @@
                 resize: none;
 
                 background: #3333;
+            }
+
+            .btn {
+                width: 15rem;
+                margin: 0 auto;
             }
         }
     }
@@ -82,6 +87,10 @@
     
                 .message {
                     height: 10rem;
+                }
+
+                .btn {
+                    width: 10rem;
                 }
             }
         }
