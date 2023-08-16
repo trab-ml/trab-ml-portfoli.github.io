@@ -83,15 +83,22 @@
     .portfolio .box-container {
         padding: 0 0.5rem;
 
+        // font-size: 0.8rem;
+
         .flip-card {
             margin: 0.5rem;
-        }
-    }
-}
 
-@media only screen and (max-width: 500px) {
-    .portfolio {
-        .box-container {
+            .flip-card-back {
+                h3 {
+                    font-size: 1.2rem;
+                    line-height: 1rem;
+                }
+            
+
+                p {
+                    font-size: 0.5rem;
+                }
+            }
         }
     }
 }

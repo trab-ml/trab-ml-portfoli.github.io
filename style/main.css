@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -84,51 +85,42 @@ a:hover {
   text-decoration: underline;
 }
 
-.heading {
+body {
+  font-family: "Nanum Myeongjo", serif;
+}
+body .heading {
   text-align: center;
   text-transform: capitalize;
   border-bottom: 0.1rem solid #eee;
 }
-
-h1, h2, h3, h4, h5, h6 {
+body h1, body h2, body h3, body h4, body h5, body h6 {
   padding: 1.5rem 0;
+  line-height: 1rem;
   color: #fff;
 }
-
-h1 {
-  font-size: 2.7rem;
+body h1 {
+  font-size: 2.2rem;
   font-weight: 650;
-  line-height: 5.5rem;
 }
-
-h2 {
-  font-size: 2rem;
+body h2 {
+  font-size: 1.9rem;
   font-weight: 550;
-  line-height: 5rem;
 }
-
-h3 {
-  font-size: 1.8rem;
-  font-weight: 450;
-  line-height: 4.5rem;
-}
-
-h4 {
+body h3 {
   font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 4rem;
+  font-weight: 450;
 }
-
-h5 {
+body h4 {
   font-size: 1.3rem;
-  font-weight: 350;
-  line-height: 3.5rem;
+  font-weight: 400;
 }
-
-h6 {
+body h5 {
+  font-size: 1.2rem;
+  font-weight: 350;
+}
+body h6 {
   font-size: 1.1rem;
   font-weight: 300;
-  line-height: 3rem;
 }
 
 .hidden {
@@ -432,10 +424,11 @@ header .user p {
   width: 20rem;
   height: 10rem;
   text-align: center;
+  padding: 0.2rem;
   background: #222;
 }
 .about .row .stack-tech .ctn .box span {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #e5e5e6;
 }
 
@@ -445,9 +438,17 @@ header .user p {
   }
   .about .row .stack-tech .ctn {
     flex-direction: column;
+    margin-top: 1rem;
   }
   .about .row .stack-tech .ctn .box {
     width: 100%;
+    padding: 0.2rem;
+  }
+  .about .row .stack-tech .ctn .box h4 {
+    margin-top: 2rem;
+  }
+  .about .row .stack-tech .ctn .box span {
+    font-size: 0.9rem;
   }
 }
 .education .box-container {
@@ -611,6 +612,13 @@ header .user p {
   .portfolio .box-container .flip-card {
     margin: 0.5rem;
   }
+  .portfolio .box-container .flip-card .flip-card-back h3 {
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+  .portfolio .box-container .flip-card .flip-card-back p {
+    font-size: 0.5rem;
+  }
 }
 .contact .row {
   display: flex;
@@ -657,6 +665,9 @@ header .user p {
   }
   .contact .row .item {
     width: 100%;
+  }
+  .contact .row .item1 .title {
+    text-align: center;
   }
   .contact .row .item1 p {
     display: flex;
@@ -723,36 +734,36 @@ header .user .post {
   body {
     padding-left: 19.25rem;
   }
-  h1, h2, h3, h4, h5, h6 {
+  body h1, body h2, body h3, body h4, body h5, body h6 {
     padding: 0.5rem 0.2rem;
     color: #fff;
   }
-  h1 {
+  body h1 {
     font-size: 1.8rem;
     font-weight: 650;
     line-height: 3rem;
   }
-  h2 {
+  body h2 {
     font-size: 1.5rem;
     font-weight: 550;
     line-height: 2.5rem;
   }
-  h3 {
+  body h3 {
     font-size: 1.3rem;
     font-weight: 450;
     line-height: 2rem;
   }
-  h4 {
+  body h4 {
     font-size: 1.2rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
   }
-  h5 {
+  body h5 {
     font-size: 1.1rem;
     font-weight: 350;
     line-height: 1.3rem;
   }
-  h6 {
+  body h6 {
     font-size: 0.8rem;
     font-weight: 300;
     line-height: 1.1rem;
