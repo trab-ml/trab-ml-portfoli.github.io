@@ -25,16 +25,17 @@ header {
                 padding: 1rem;
                 margin: 1.5rem 0;
                 
-                color: black;
+                color: #050B04;
                 background: #fff;
 
                 font-size: 1.5rem;
+                font-weight: 600;
 
                 border-radius: 5rem;
 
                 &:hover {
+                    color: #fff;;
                     background: #00bcd4;
-                    color: beige;
                 }
             }
         }
@@ -63,7 +64,7 @@ header {
         p {
             font-size: 1.5rem;
             font-weight: 600;
-            color: #eee;
+            color: #420200;
         }
     }
 }

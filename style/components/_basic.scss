@@ -15,6 +15,7 @@
 }
 
 .btn {
+    width: 22rem;
     margin-top: 1rem;
     padding: 0.7rem 1.5rem;
 
@@ -24,6 +25,7 @@
     cursor: pointer;
 
     font-size: 0.9rem;
+    font-size: 2rem;
 
     border-radius: 5rem;
 
@@ -67,4 +69,12 @@ section {
     bottom: 4.5rem;
     right: -1rem;
     z-index: 100;
+}
+
+@media only screen and (max-width: 962px) {
+    .btn {
+        width: 10rem;
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
 }

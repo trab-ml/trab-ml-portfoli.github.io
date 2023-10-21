@@ -6,6 +6,10 @@
         flex-wrap: wrap;
         margin: 2rem 6rem;
 
+        i {
+            font-size: 1.5rem;
+        }
+
         .item {
             width: 50%;
             display: flex;
@@ -41,7 +45,6 @@
             }
 
             .btn {
-                width: 15rem;
                 margin: 0 auto;
             }
         }
@@ -91,10 +94,6 @@
     
                 .message {
                     height: 10rem;
-                }
-
-                .btn {
-                    width: 10rem;
                 }
             }
         }

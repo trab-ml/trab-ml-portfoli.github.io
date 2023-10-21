@@ -1,104 +1,105 @@
 .portfolio .box-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
 
-    .flip-card {
-        width: 300px;
-        height: 200px;
-        perspective: 1000px;
-        margin: 2rem;
-        box-sizing: border-box;
-        overflow: hidden;
+  .flip-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
 
-        border-radius: 1rem;
-        cursor: pointer;
-    
-        border: 1px solid #f1f1f1;
-    
-        background-color: transparent;
-    
-        transition: calc(150ms * var(--transition-delay));
-    
-        &:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
+    border-radius: 1rem;
+    cursor: pointer;
 
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+    border: 1px solid #f1f1f1;
 
-            border-radius: 1rem;
+    background-color: transparent;
 
-            transition: all 2s;
+    transition: calc(150ms * var(--transition-delay));
 
-            &:hover {
-                transform: rotateY(180deg);
-            }
-        }
-    
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transform-style: preserve-3d;
-
-            transition: transform 0.8s;
-        }
-    
-        .flip-card-front,
-        .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-
-        .flip-card-back {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            transform: rotateY(180deg);
-    
-            color: white;
-            background-color: dodgerblue;
-    
-            p {
-                padding: 0 0.9rem;
-                text-align: justify;
-    
-                font-size: 0.9rem;
-            }
-        }
+    &:hover .flip-card-inner {
+      transform: rotateY(180deg);
     }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+      border-radius: 1rem;
+
+      transition: all 2s;
+
+      &:hover {
+        transform: rotateY(180deg);
+      }
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transform-style: preserve-3d;
+
+      transition: transform 0.8s;
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: rotateY(180deg);
+
+        color: white;
+        background-color: dodgerblue;
+
+        h3 {
+            color: white;
+        }
+
+        p {
+          padding: 0 0.9rem;
+          text-align: justify;
+
+        //   font-size: 1.4rem;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 568px) {
-    .portfolio .box-container {
-        padding: 0 0.5rem;
+  .portfolio .box-container {
+    padding: 0 0.5rem;
 
-        // font-size: 0.8rem;
+    .flip-card {
+      margin: 0.5rem;
 
-        .flip-card {
-            margin: 0.5rem;
-
-            .flip-card-back {
-                h3 {
-                    font-size: 1.2rem;
-                    line-height: 1rem;
-                }
-            
-
-                p {
-                    font-size: 0.5rem;
-                }
-            }
+      .flip-card-back {
+        h3 {
+          font-size: 1rem;
+          line-height: 0.8rem;
         }
+
+        p {
+          font-size: 1rem;
+        }
+      }
     }
+  }
 }

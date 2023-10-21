@@ -11,28 +11,28 @@
 // @import "layout/footer";
 
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 html::-webkit-scrollbar {
-    width: 1.4rem;
+  width: 1.4rem;
 }
 
 html::-webkit-scrollbar-track {
-    background: #222;
+  background: #222;
 }
 
 html::-webkit-scrollbar-thumb {
-    background: $primary;
+  background: $primary;
 }
 
 body {
-    padding-left: 35rem;
-    overflow-x: hidden;
-    
-    background: $main-bg-color;
+  padding-left: 35rem;
+  overflow-x: hidden;
+
+  background: $main-bg-color;
 }
 
 header nav a,
@@ -40,64 +40,54 @@ header nav a,
 #about .heading,
 #about .heading .info,
 header .user .post {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 792px) {
-    html {
-        font-size: 1rem;
+  html {
+    font-size: 1rem;
+  }
+
+  body {
+    padding-left: 19.25rem;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      padding: 0.5rem 0.2rem;
     }
 
-    body {
-        padding-left: 19.25rem;
-
-        h1, h2, h3, h4, h5, h6 {
-            padding: 0.5rem 0.2rem;
-        
-            color: #fff;
-        }
-        
-        h1 {
-            font-size: 1.8rem;
-            font-weight: 650;
-            line-height: 3rem;
-        }
-        
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 550;
-            line-height: 2.5rem;
-        }
-        
-        h3 {
-            font-size: 1.3rem;
-            font-weight: 450;
-            line-height: 2rem;
-        }
-        
-        h4 {
-            font-size: 1.2rem;
-            font-weight: 400;
-            line-height: 1.3rem;
-        }
-        
-        h5 {
-            font-size: 1.1rem;
-            font-weight: 350;
-            line-height: 1.3rem;
-        }
-        
-        h6 {
-            font-size: 0.8rem;
-            font-weight: 300;
-            line-height: 1.1rem;
-        }
+    h1 {
+      line-height: 3rem;
     }
+
+    h2 {
+      line-height: 2.5rem;
+    }
+
+    h3 {
+      line-height: 2rem;
+    }
+
+    h4 {
+      line-height: 1.3rem;
+    }
+
+    h5 {
+      line-height: 1.3rem;
+    }
+
+    h6 {
+      line-height: 1.1rem;
+    }
+  }
 }
 
-
 .on-mobile {
-    position: relative;
-    width: 18rem;
-    left: -15rem;
+  position: relative;
+  width: 18rem;
+  left: -15rem;
 }
