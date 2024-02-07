@@ -1,297 +1,314 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>btraore25@yahoo.com</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>btraore25@yahoo.com</title>
 
-        <!-- font awesome  -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        />
-        <!-- css -->
-        <link rel="stylesheet" type="text/css" href="style/main.css" />
-    </head>
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+  </head>
 
-    <body>
-        <!-- début header -->
-        <header id="sidebar" class="hidden">
-            <div class="user">
-                <div>
-                    <img
-                        src="imgs/WithoutBackground.jpg"
-                        alt="Une image de ma personne !"
-                    />
-                </div>
-                <h1>Développeur web</h1>
-                <p class="name">Traoré Bernard</p>
+  <body>
+    <!-- début header -->
+    <header id="sidebar" class="hidden">
+      <div class="user">
+        <div>
+          <img
+            src="imgs/WithoutBackground.jpg"
+            alt="Une image de ma personne !"
+          />
+        </div>
+        <h1>Développeur web</h1>
+        <p class="name">Traoré Bernard</p>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home" class="nav-link">accueil</a></li>
+          <li><a href="#about" class="nav-link">a propos</a></li>
+          <li><a href="#education" class="nav-link">formation</a></li>
+          <li><a href="#portfolio" class="nav-link">portfolio</a></li>
+          <li><a href="#contact" class="nav-link">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- fin header -->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- début home -->
+    <section class="home hidden" id="home">
+      <p class="hi-text">Bonjour !</p>
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="./imgs/bgtof2.png" alt="ma photo" />
+          </div>
+          <div class="content" style="--color: green">
+            <p>Qui suis je ?</p>
+            <p>
+              Déterminé dans tout ce que j' entreprends, je suis un développeur
+              web qui privilégie le travail propre et bien fait.
+            </p>
+            <a href="#about">En savoir plus</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="./imgs/bgtof3.png" alt="ma photo" />
+          </div>
+          <div class="content" style="--color: blue">
+            <p>Et puis encore ?</p>
+            <p>
+              J'ai récemment décroché ma licence en informatique et je compte me
+              spécialiser dans le développement web en alternance.
+            </p>
+            <a href="#education">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin home -->
+
+    <!-- début about  -->
+    <section class="about" id="about">
+      <h2 class="heading hidden">a propos de moi</h2>
+
+      <div class="row">
+        <div class="info hidden">
+          <h4><span> nom : </span> Traore Bernard</h4>
+          <h4><span> études : </span> université d'Artois</h4>
+          <h4><span> poste en vue : </span> Développeur fullstack</h4>
+          <h4><span> langue parlée : </span> Français</h4>
+          <a href="cv.pdf" id="download-link" rel="no-follow"
+            ><button class="btn download-btn">
+              Télécharger CV
+              <i class="fas fa-download"></i></button
+          ></a>
+        </div>
+
+        <div class="stack-tech hidden">
+          <h3>Intégrations Récentes</h3>
+          <div class="ctn">
+            <div class="box">
+              <h4>
+                <a href="https://trab-ml.github.io/spicy-food/">Spicy Food</a>
+              </h4>
+              <span>Le site TAILWIND-CSS d'un restaurant</span>
             </div>
 
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#home" class="nav-link">accueil</a></li>
-                    <li><a href="#about" class="nav-link">a propos</a></li>
-                    <li><a href="#education" class="nav-link">formation</a></li>
-                    <li><a href="#portfolio" class="nav-link">portfolio</a></li>
-                    <li><a href="#contact" class="nav-link">contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- fin header -->
-
-        <div id="menu" class="fas fa-bars"></div>
-
-        <!-- début home -->
-        <section class="home hidden" id="home">
-            <p class="hi-text">Bonjour !</p>
-            <div class="container">
-                <div class="card">
-                    <div class="imgBx"><img src="./imgs/bgtof2.png" alt="ma photo"/></div>
-                    <div class="content" style="--color: green">
-                        <p>Qui suis je ?</p>
-                        <p>Déterminé dans tout ce que j' entreprends, je suis un développeur web qui privilégie le travail propre et bien fait.</p>
-                        <a href="#about">En savoir plus</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBx"><img src="./imgs/bgtof3.png" alt="ma photo"/></div>
-                    <div class="content" style="--color: blue">
-                        <p>Et puis encore ?</p>
-                        <p>
-                            J'ai récemment décroché ma licence en informatique et je compte
-                            me spécialiser dans le développement web en
-                            alternance.
-                        </p>
-                        <a href="#education">En savoir plus</a>
-                    </div>
-                </div>
+            <div class="box">
+              <h4>
+                <a href="https://trab-ml.github.io/landing-page/">TheBox</a>
+              </h4>
+              <span>Un landing page HTML-SASS</span>
             </div>
-        </section>
-        <!-- fin home -->
 
-        <!-- début about  -->
-        <section class="about" id="about">
-            <h2 class="heading hidden">a propos de moi</h2>
-
-            <div class="row">
-                <div class="info hidden">
-                    <h4><span> nom : </span> Traore Bernard</h4>
-                    <h4><span> études : </span> université d'Artois</h4>
-                    <h4><span> poste en vue : </span> Développeur fullstack</h4>
-                    <h4><span> langue parlée : </span> Français</h4>
-                    <a href="cv.pdf" id="download-link" rel="no-follow"
-                        ><button class="btn download-btn">
-                            Télécharger CV
-                            <i class="fas fa-download"></i></button
-                    ></a>
-                </div>
-
-                <div class="stack-tech hidden">
-                    <h3>Intégrations Récentes</h3>
-                    <div class="ctn">
-                        <div class="box">
-                            <h4><a href="https://trab-ml.github.io/spicy-food/">Spicy Food</a></h4>
-                            <span>Le site TAILWIND-CSS d'un restaurant</span>
-                        </div>
-                        
-                        <div class="box">
-                            <h4><a href="https://trab-ml.github.io/landing-page/">TheBox</a></h4>
-                            <span>Un landing page HTML-SASS</span>
-                        </div>
-
-                        <div class="box">
-                            <h4><a href="https://trab-ml.github.io/dream-home/">DreamHome</a></h4>
-                            <span>Le front d'un site immobilier avec ReactJS (en cours)</span>
-                        </div>
-
-                        <div class="box">
-                            <h4><a href="https://trab-ml.github.io/Dreamhome/">Fake Airbnb</a></h4>
-                            <span>Un homepage Airbnb HTML-SASS</span>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="box">
+              <h4>
+                <a href="https://trab-ml.github.io/dream-home/">DreamHome</a>
+              </h4>
+              <span>Le front d'un site immobilier avec ReactJS (en cours)</span>
             </div>
-        </section>
-        <!-- fin about -->
 
-        <!-- début formation -->
-        <section class="education hidden" id="education">
-            <h2 class="heading">mes formations</h2>
-
-            <div class="box-container">
-                <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>2018</span>
-                    <h4>Bac S</h4>
-                    <p>
-                        J'ai obtenu mon baccalauréat scientifique avec
-                        mention assez-bien au lycée sacré coeur à
-                        <a href="https://fr.wikipedia.org/wiki/Bamako"
-                            >Bamako</a
-                        >
-                        (Mali).
-                    </p>
-                </div>
-
-                <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>2023</span>
-                    <h4>Licence informatique</h4>
-                    <p>
-                        J'ai obtenu ma licence
-                        informatique à l'
-                        <a href="http://www.sciences.univ-artois.fr/"
-                            >Université d'Artois (Lens).</a
-                        >
-                    </p>
-                </div>
+            <div class="box">
+              <h4>
+                <a href="https://trab-ml.github.io/Dreamhome/">Fake Airbnb</a>
+              </h4>
+              <span>Un homepage Airbnb HTML-SASS</span>
             </div>
-        </section>
-        <!-- fin formation -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin about -->
 
-        <!-- début projects section  -->
-        <section class="portfolio hidden" id="portfolio">
-            <h2 class="heading">mes projets</h2>
+    <!-- début formation -->
+    <section class="education hidden" id="education">
+      <h2 class="heading">mes formations</h2>
 
-            <div class="box-container">
-                <div class="flip-card box hidden" style="--transition-delay: 2">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="imgs/calculator.png" alt="memory" />
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Calculator</h3>
-                            <p>
-                                Mini-projet javascript reproduisant une
-                                calculatrice moderne permettant de calculer
-                                comme cette dernière.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2018</span>
+          <h4>Bac S</h4>
+          <p>
+            J'ai obtenu mon baccalauréat scientifique avec mention assez-bien au
+            lycée sacré coeur à
+            <a href="https://fr.wikipedia.org/wiki/Bamako">Bamako</a>
+            (Mali).
+          </p>
+        </div>
 
-                <div class="flip-card box hidden" style="--transition-delay: 4">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="imgs/memory.png" alt="memory" />
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Memory</h3>
-                            <p>
-                                Mini-projet visant à mieux cerner la logique
-                                javascript à travers la reproduction du jeu
-                                memory.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2023</span>
+          <h4>Licence informatique</h4>
+          <p>
+            J'ai obtenu ma licence informatique à l'
+            <a href="http://www.sciences.univ-artois.fr/"
+              >Université d'Artois (Lens).</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- fin formation -->
 
-                <div class="flip-card box hidden" style="--transition-delay: 6">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="imgs/tictac.png" alt="memory" />
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Tic Tac Toe</h3>
-                            <p>
-                                Mini-projet ayant comme objectif de mieux cerner
-                                la logique javascript à travers la reproduction
-                                du jeu tic tac toe.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <!-- début projects section  -->
+    <section class="portfolio hidden" id="portfolio">
+      <h2 class="heading">mes projets</h2>
 
-                <div class="flip-card box hidden" style="--transition-delay: 8">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="imgs/sokoban.png" alt="memory" />
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Sokoban</h3>
-                            <p>
-                                Mini-projet visant à intégrer la logique java à
-                                travers la reproduction du jeu sokoban.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card box hidden" style="--transition-delay: 10">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img
-                                src="imgs/puissance4.png"
-                                alt="puissance 4 app picture"
-                            />
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Puissance 4</h3>
-                            <p>
-                                Mini-projet ayant pour but de mieux cerner la
-                                logique C à travers la reproduction du jeu
-                                Puissance 4.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card box hidden" style="--transition-delay: 12">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img
-                                src="imgs/jungle.png"
-                                alt="perfum website picture"
-                            />
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Green Sight</h3>
-                            <p>
-                                Site de ventes de plantesProjet ludique réalisé par le biais du cours OpenClassroom
-                                "Débutez avec React".
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <div class="box-container">
+        <div class="flip-card box hidden" style="--transition-delay: 2">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/classifier.png" alt="decison tree classifier" />
             </div>
-        </section>
-        <!-- fin projects section -->
-
-        <!-- début contact -->
-        <section class="contact hidden" id="contact">
-            <h2 class="heading">contactez moi</h2>
-
-            <div class="row">
-                <div class="item item1">
-                    <h4 class="title">Contact</h4>
-                    <p> <i class="fas fa-envelope"></i> <span> btraore25@yahoo.com </span> </p>
-                    <p> <i class="fas fa-phone"></i> <span> +33 753855479 </span> </p>
-                    <p>
-                      <a href="https://www.arras.fr/"><i class="fas fa-map-marker-alt" style="color: #000"></i></a>
-                      <span> Arras, France </span>
-                    </p>
-                </div>
-
-                <form class="item item2" action="">
-                    <input type="text" placeholder="nom" class="box" required />
-                    <input type="email" placeholder="email" class="box" required/>
-                    <input type="text" placeholder="objet" class="box" required />
-                    <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message" required ></textarea>
-                    <button type="submit" class="btn"> Envoyer <i class="fas fa-paper-plane"></i> </button>
-                </form>
+            <div class="flip-card-back">
+              <h3>
+                <a href="https://github.com/trab-ml/classifier">Classifier</a>
+              </h3>
+              <p>
+                Conception et mise en œuvre d'un classifieur à l'aide d'un arbre
+                de décision en Python
+              </p>
             </div>
-        </section>
-        <!-- fin contact -->
+          </div>
+        </div>
 
-        <!-- scroll to top trigger  -->
-        <a href="#home" class="top"> <img src="imgs/rocket.svg" alt="" width="80px" height="80px" /> </a>
+        <div class="flip-card box hidden" style="--transition-delay: 4">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/movie-app.png" alt="minimalist movie app" />
+            </div>
+            <div class="flip-card-back">
+              <h3><a href="https://github.com/trab-ml/movie-app">Movie App</a></h3>
+              <p>
+                Conception et développement d'une application minimaliste en React simulant un trieur de films
+              </p>
+            </div>
+          </div>
+        </div>
 
-        <!-- jquery cdn link  -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <div class="flip-card box hidden" style="--transition-delay: 6">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/le-morpion.png" alt="le morpion" width="640px" height="480px" />
+            </div>
+            <div class="flip-card-back">
+              <h3><a href="https://github.com/trab-ml/le-morpion-malin">Le Morpion Malin</a></h3>
+              <p>
+                Conception et développement d'un projet miniaturisé visant à créer une version intelligente 
+                du jeu de 'Tic Tac Toe' (également connu sous le nom de 'Le Morpion'), conçue pour jouer contre une intelligence artificielle.
+              </p>
+            </div>
+          </div>
+        </div>
 
-        <!-- js files -->
-        <script src="js/script.js"></script>
-    </body>
+        <div class="flip-card box hidden" style="--transition-delay: 8">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/sokoban.png" alt="memory" />
+            </div>
+            <div class="flip-card-back">
+              <h3>Sokoban</h3>
+              <p>
+                Mini-projet visant à intégrer la logique java à travers la
+                reproduction du jeu sokoban.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card box hidden" style="--transition-delay: 10">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/puissance4.png" alt="puissance 4 app picture" />
+            </div>
+            <div class="flip-card-back">
+              <h3>Puissance 4</h3>
+              <p>
+                Mini-projet ayant pour but de mieux cerner la logique C à
+                travers la reproduction du jeu Puissance 4.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card box hidden" style="--transition-delay: 12">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imgs/jungle.png" alt="perfum website picture" />
+            </div>
+            <div class="flip-card-back">
+              <h3>Green Sight</h3>
+              <p>
+                Site de ventes de plantesProjet ludique réalisé par le biais du
+                cours OpenClassroom "Débutez avec React".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin projects section -->
+
+    <!-- début contact -->
+    <section class="contact hidden" id="contact">
+      <h2 class="heading">contactez moi</h2>
+
+      <div class="row">
+        <div class="item item1">
+          <h4 class="title">Contact</h4>
+          <p>
+            <i class="fas fa-envelope"></i> <span> btraore25@yahoo.com </span>
+          </p>
+          <p><i class="fas fa-phone"></i> <span> +33 753855479 </span></p>
+          <p>
+            <a href="https://www.arras.fr/"
+              ><i class="fas fa-map-marker-alt" style="color: #000"></i
+            ></a>
+            <span> Arras, France </span>
+          </p>
+        </div>
+
+        <form class="item item2" action="">
+          <input type="text" placeholder="nom" class="box" required />
+          <input type="email" placeholder="email" class="box" required />
+          <input type="text" placeholder="objet" class="box" required />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            class="box message"
+            placeholder="message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">
+            Envoyer <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- fin contact -->
+
+    <!-- scroll to top trigger  -->
+    <a href="#home" class="top">
+      <img src="imgs/rocket.svg" alt="" width="80px" height="80px" />
+    </a>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- js files -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
